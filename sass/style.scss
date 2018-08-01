@@ -1,77 +1,66 @@
-@import 'variables';
+@import url("http://fonts.googleapis.com/css?family=Lato:300,300italic,700&amp;subset=latin,latin-ext");
 
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+* {
+   margin: 0;
+   padding: 0;
+}
 
 body {
-  font-family: $font-stack--content;
-  color: $color--main;
-  width: $width--desktop;
-  font-weight: $normal;
+   font-family: 'Lato', sans-serif;
+}
 
-   @media (max-width: $breakpoint--desktop) {
-      width: $width--tablet;
+h1 {
+   margin: 24px 0;
+   text-align: center;
+}
+
+a {
+   text-decoration: none;
+}
+
+#container {
+   display: flex;
+   flex-wrap: wrap;
+   margin: auto;
+   width: 1200px;
+
+   @media (max-width: 1280px) {
+      width: 1000px;
    }
 
-   @media (max-width: $breakpoint--tablet) {
-      width: $width--mobile;
-   }
-}
-
-h1, h2, h3, h4, h5, h6 {
-   font-family: $font-stack--headings;
-}
-
-p {
-   font-size: 2rem;
-}
-
-main {
-   > p {
-      color: red;
-   }
-}
-
-header {
-   ed: {
-      bob: "name";
+   @media (max-width: 1080px) {
+      width: 92.59%;
    }
 }
 
-footer {
-   p {
-      margin: {
-         top: 24px;
-         bottom: 36px;
-      }
+.item {
+   position: relative;
+   width: 50%;
+   line-height: 0;
 
-      font: {
-         style: italic;
-         weight: bold;
-         variant: small-caps;
-      }
+   @media (max-width: 1080px) {
+      width: 100%;
    }
-}
 
-nav {
-   a {
-      &:link {
-          font-size: 4rem;
-          text-decoration: none;
-          transition: 350ms;
-       }
+   &--image {
+      width: 100%;
+   }
 
-       &:visited {
-          color: grey;
-       }
+   &--heading {
+      position: absolute;
+      top: 24px;
+      margin-right: 48px;
+      background-color: rgba(255, 255, 255, .9);
+      padding: 12px 24px;
+      line-height: 1.2;
+   }
 
-       &:hover {
-          background-color: red;
-       }
-
-       &:active {
-          text-decoration: overline;
-          background-color: pink;
-          color: green;
-       }
-    }
+   &--caption {
+      position: absolute;
+      bottom: 24px;
+      left: 0;
+      background-color: rgba(255, 255, 255, .9);
+      padding: 12px;
+      line-height: 1;
+   }
 }
