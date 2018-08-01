@@ -1,6 +1,22 @@
-// Here is a Sass comment
+@import 'variables';
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 body {
-  color: blue;
-  border: 1px solid green;
+  font-family: $font-stack--content;
+  color: $color--main;
+  width: $width--desktop;
+  font-weight: $normal;
+
+   @media (max-width: $breakpoint--desktop) {
+      width: $width--tablet;
+   }
+
+   @media (max-width: $breakpoint--tablet) {
+      width: $width--mobile;
+   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: $font-stack--headings;
 }

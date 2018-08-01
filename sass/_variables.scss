@@ -1,0 +1,36 @@
+// =========================================================
+// Variables
+// =========================================================
+$font-stack--headings: 'Playfair Display', Georgia, Times, serif;
+$font-stack--content:  Arial, Helvetica, sans-serif;
+$color--main:          #222;
+
+// =========================================================
+// Grid Variables
+// =========================================================
+$grid--column-width: 60px;
+$grid--gutter-width: 20px;
+$grid--unit:         ($grid--column-width + $grid--gutter-width);
+
+// =========================================================
+// Widths
+// =========================================================
+$width--desktop:     (12 * $grid--unit);
+$width--tablet:      (10 * $grid--unit);
+$width--mobile:      (5 * $grid--unit);
+
+// =========================================================
+// Breakpoints
+// =========================================================
+$breakpoint--desktop: 1000px;
+$breakpoint--tablet:  800px;
+$breakpoint--mobile:  420px;
+
+// =========================================================
+// Font weights
+// =========================================================
+$extra-light: 100;
+$normal:      400;
+$bold:        700;
+$semibold:    600;
+$black:       900;
