@@ -22,9 +22,9 @@ $width--mobile:      (5 * $grid--unit);
 // =========================================================
 // Breakpoints
 // =========================================================
-$breakpoint--desktop: 1000px;
-$breakpoint--tablet:  800px;
-$breakpoint--mobile:  420px;
+$breakpoint--desktop: (12 * $grid--unit) + 40;
+$breakpoint--tablet:  (10 * $grid--unit);
+$breakpoint--mobile:  (5 * $grid--unit) + 20;
 
 // =========================================================
 // Font weights
