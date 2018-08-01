@@ -20,3 +20,58 @@ body {
 h1, h2, h3, h4, h5, h6 {
    font-family: $font-stack--headings;
 }
+
+p {
+   font-size: 3rem;
+}
+
+main {
+   > p {
+      color: red;
+   }
+}
+
+header {
+   ed: {
+      bob: "name";
+   }
+}
+
+footer {
+   p {
+      margin: {
+         top: 24px;
+         bottom: 36px;
+      }
+
+      font: {
+         style: italic;
+         weight: bold;
+         variant: small-caps;
+      }
+   }
+}
+
+nav {
+   a {
+      &:link {
+          font-size: 4rem;
+          text-decoration: none;
+          transition: 350ms;
+       }
+
+       &:visited {
+          color: grey;
+       }
+
+       &:hover {
+          background-color: red;
+       }
+
+       &:active {
+          text-decoration: overline;
+          background-color: pink;
+          color: green;
+       }
+    }
+}
