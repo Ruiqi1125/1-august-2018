@@ -1,3 +1,38 @@
-@import 'header';
-@import 'main';
-@import 'footer';
+$bg-color--nav: lightblue;
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+nav {
+   background-color: $bg-color--nav;
+
+   ul {
+      display: flex;
+      list-style-type: none;
+      width: 400px;
+      margin: auto;
+
+      @media (max-width: 800px) {
+         display: block;
+      }
+
+      li {
+         text-align: center;
+         width: 100px;
+
+         a {
+            display: block;
+            text-decoration: none;
+            transition: 350ms;
+            width: 100%;
+            padding: 12px 0;
+
+            &:hover {
+               background-color: yellow;
+            }
+         }
+      }
+   }
+}
